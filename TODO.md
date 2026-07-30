@@ -1,20 +1,28 @@
 # TODO — Cortex
 
-## Agora
+## Fase 1 — Setup
+- [ ] Instalar cargo-lambda (`cargo install cargo-lambda`)
+- [ ] Criar `api/` com Lambda health check (Rust)
+- [ ] Criar `template.yaml` (SAM)
+- [ ] Configurar DynamoDB tables (Pages, Vectors)
+- [ ] Deploy health check
 
-- [ ] Inicializar backend Rust (Cargo + Axum + health check).
-- [ ] Inicializar frontend React + Vite + PWA.
-- [ ] Criar VM no DigitalOcean.
-- [ ] Configurar MongoDB Atlas.
-- [ ] Subir Qdrant em Docker na VM.
-- [ ] Configurar Tailscale na VM.
+## Fase 2 — CRUD
+- [ ] CRUD de páginas (GET/POST/PUT/DELETE)
+- [ ] Validação + erros
 
-## Depois
+## Fase 3 — RAG
+- [ ] Vector search (Scan + cosine)
+- [ ] Embeddings (Hugging Face free tier)
+- [ ] Chat com RAG
 
-- [ ] Autenticação (senha mestra + token por dispositivo).
-- [ ] CRUD de páginas no backend.
-- [ ] Editor em blocos no frontend.
-- [ ] Fila temporária + worker assíncrono.
-- [ ] Chunking + embeddings + Qdrant.
-- [ ] Chat com RAG.
-- [ ] IA sugerindo alterações.
+## Fase 4 — Deploy
+- [ ] S3 + CloudFront (frontend)
+- [ ] Cognito (auth)
+- [ ] CI/CD básico
+
+## Ordem
+1. Semana 1: Fase 1
+2. Semana 2: Fase 2
+3. Semana 3: Fase 3
+4. Semana 4: Fase 4
