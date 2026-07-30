@@ -2,7 +2,6 @@
 
 ## Fase 1 — Setup
 - [ ] Instalar cargo-lambda (`cargo install cargo-lambda`)
-- [ ] Criar `api/` com Lambda health check (Rust)
 - [ ] Criar `template.yaml` (SAM)
 - [ ] Configurar DynamoDB tables (Pages, Vectors)
 - [ ] Deploy health check
@@ -19,7 +18,6 @@
 ## Fase 4 — Deploy
 - [ ] S3 + CloudFront (frontend)
 - [ ] Cognito (auth)
-- [ ] CI/CD básico
 
 ## Ordem
 1. Semana 1: Fase 1

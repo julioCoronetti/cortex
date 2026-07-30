@@ -2,12 +2,11 @@
 
 ## Stack
 - Frontend: React + Vite
-- Backend: Lambda + API Gateway
+- Backend: Lambda + API Gateway (Rust)
 - Banco: DynamoDB
 - Deploy: S3 + CloudFront
 
 ## Regras
-- Não usar Rust (complexidade desnecessária)
 - Não criar pastas como shared/, infra/ (over-engineering)
 - Simplicidade > organização perfeita
 - Código em inglês, conceitos em português

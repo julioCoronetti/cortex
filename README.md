@@ -5,7 +5,7 @@ Base de conhecimento pessoal com RAG.
 ## Stack
 
 - Frontend: React + Vite (PWA)
-- Backend: Lambda + API Gateway (Node.js)
+- Backend: Lambda + API Gateway (Rust)
 - Banco: DynamoDB
 - Vector: DynamoDB + busca em Lambda
 - Auth: Cognito
@@ -16,7 +16,7 @@ Base de conhecimento pessoal com RAG.
 ```
 cortex/
 ├── frontend/    # React + Vite
-├── api/         # Lambda functions
+├── api/         # Lambda functions (Rust)
 └── template.yaml
 ```
 
