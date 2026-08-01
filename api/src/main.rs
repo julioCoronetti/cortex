@@ -1,5 +1,5 @@
-use lambda_http::{service_fn, LambdaEvent, Request, Response, Body};
-use serde_json::{json, Value};
+use lambda_http::{service_fn, Body, Request, Response};
+use serde_json::json;
 
 #[tokio::main]
 async fn main() -> Result<(), lambda_http::Error> {
@@ -8,10 +8,10 @@ async fn main() -> Result<(), lambda_http::Error> {
     Ok(())
 }
 
-async fn handler(event: LambdaEvent<Request>) -> Result<Response<Body>, lambda_http::Error> {
-    let (parts, _body) = event.into_parts();
-    
-    match parts.uri.path.as_str() {
+async fn handler(request: Request) -> Result<Response<Body>, lambda_http::Error> {
+    let path = request.uri().path();
+
+    match path {
         "/health" => {
             let body = json!({ "status": "ok" });
             Ok(Response::builder()
