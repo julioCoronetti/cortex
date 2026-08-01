@@ -1,10 +1,17 @@
 # TODO — Cortex
 
 ## Fase 1 — Setup
+- [x] Instalar Rust (mínimo: rustc, cargo, clippy, rustfmt)
+- [x] Corrigir versões do Cargo.toml
+- [x] Adaptar main.rs para lambda_http 1.x
 - [ ] Instalar cargo-lambda (`cargo install cargo-lambda`)
 - [ ] Criar `template.yaml` (SAM)
 - [ ] Configurar DynamoDB tables (Pages, Vectors)
 - [ ] Deploy health check
+
+## Fase 1.5 — CI/CD
+- [ ] Configurar GitHub Actions (lint, test, build)
+- [ ] Adicionar scripts no package.json
 
 ## Fase 2 — CRUD
 - [ ] CRUD de páginas (GET/POST/PUT/DELETE)
@@ -18,9 +25,3 @@
 ## Fase 4 — Deploy
 - [ ] S3 + CloudFront (frontend)
 - [ ] Cognito (auth)
-
-## Ordem
-1. Semana 1: Fase 1
-2. Semana 2: Fase 2
-3. Semana 3: Fase 3
-4. Semana 4: Fase 4
