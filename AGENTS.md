@@ -1,4 +1,6 @@
-# AGENTS.md
+# Cortex Project
+
+Base de conhecimento pessoal com RAG.
 
 ## Stack
 - Frontend: React + Vite
@@ -6,17 +8,15 @@
 - Banco: DynamoDB
 - Deploy: S3 + CloudFront
 
-## Regras
-- Não criar pastas como shared/, infra/ (over-engineering)
-- Simplicidade > organização perfeita
-- Código em inglês, conceitos em português
-- Só commit se o usuário pedir
+## Project Rules
+Read: @.opencode/docs/rules.md
 
-## Antes de codar
-1. Leia `README.md`
-2. Leia `TODO.md`
-3. Confirme antes de mudar stack
+## Agents
+- backend: API and Lambda functions
+- frontend: React and UI components
 
-## Como interagir
-- Respostas diretas e curtas
-- Simplicidade acima de tudo
+## Workflow
+1. Read README.md and .opencode/docs/TODO.md before coding
+2. Confirm before changing stack
+3. Ask before committing
+4. Update TODO.md when completing tasks (ask user first)

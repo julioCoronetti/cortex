@@ -22,4 +22,4 @@ cortex/
 
 ## Próximos passos
 
-Ver `TODO.md`.
+Ver `.opencode/docs/TODO.md`.
