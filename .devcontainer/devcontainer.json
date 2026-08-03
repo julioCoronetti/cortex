@@ -1,0 +1,37 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.layoutControl.enabled": false,
+        "workbench.statusBar.visible": false,
+        "terminal.integrated.fontFamily": "JetBrains Mono",
+        "terminal.integrated.fontSize": 13,
+        "editor.fontFamily": "JetBrains Mono",
+        "editor.fontSize": 13,
+        "files.autoSave": "afterDelay",
+        "python.languageServer": "Default",
+        "editor.minimap.enabled": false,
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 90,
+        "extensions.ignoreRecommendations": true,
+        "explorer.confirmDragAndDrop": false,
+        "explorer.confirmDelete": false,
+        "git.confirmSync": false,
+        "python.createEnvironment.trigger": "off",
+        "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+        "terminal.integrated.stickyScroll.enabled": false,
+        "explorer.confirmPasteNative": false,
+        "editor.stickyScroll.enabled": false,
+        "explorer.compactFolders": false
+    },
+      "extensions": [
+        "charliermarsh.ruff"
+      ]
+    }
+  },
+  "postCreateCommand": "npm i -g opencode-ai",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {}
+  }
+}
